@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 import { Input } from "@/components/ui/input"
-
+import { Button } from "@/components/ui/button";
 
 
 export default function Home() {
@@ -27,12 +27,11 @@ export default function Home() {
         onChange={(e) => setNewItem(e.target.value)}
 
       />
-      <button
-        className="border-1 border-black bg-amber-100"
+      <Button
         onClick={addTodoItem}
       >
         Add Item
-      </button>
+      </Button>
     </div>
   );
 }
